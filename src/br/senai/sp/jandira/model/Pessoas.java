@@ -9,6 +9,20 @@ public class Pessoas {
 
     Scanner scanner = new Scanner(System.in);
 
+    public Pessoas() {
+        System.out.print("Informe o nome: ");
+        setNome(scanner.nextLine());
+        System.out.print("Informe a idade: ");
+        setIdade(scanner.nextInt());
+        System.out.print("Informe o CPF: ");
+        setCpf(scanner.nextLong());
+        System.out.print("Informe o RG: ");
+        setRg(scanner.nextLong());
+        System.out.print("Informe o telefone: ");
+        setTelefone(scanner.nextLong());
+        scanner.nextLine();
+    }
+
     public String getNome() {
         return nome;
     }
